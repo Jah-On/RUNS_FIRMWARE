@@ -16,43 +16,43 @@ The scope of this project is largely determined by the Bluetooth API. __There ar
 
 These services will consist of characteristics intended to handle specific components of the "robot". These services include temperature relay, front bumper trigger relay, and movement.
 
-#### Temperature - `20240233-1360-1234-0001-000000000000`
+#### Temperature - `0000a000-0000-1000-8000-00805f9b34fb`
 
 Service for reading temperature values from the robot.
 
-##### MCU - `20240233-1360-1234-0001-000000000001` - READ ONLY
+##### MCU - `0000a001-0000-1000-8000-00805f9b34fb` - READ ONLY
 
 Characteristic for reading MCU temperature.
 
 Signed eight bit value as nearest degree centigrade.
 
-##### Ambient - `20240233-1360-1234-0001-000000000010` - READ ONLY
+##### Ambient - `0000a002-0000-1000-8000-00805f9b34fb` - READ ONLY
 
 Characteristic for reading ambient temperature.
 
 Signed eight bit value as nearest degree centigrade.
 
-#### Object Proximity - `20240233-1360-1234-0002-000000000000`
+#### Object Proximity - `0000b000-0000-1000-8000-00805f9b34fb`
 
 Service for reading object proximity from the robot. Currently only bump switches but could be expanded for IR line tracking or ultrasonic range approximation.
 
-##### Bump switches - `20240233-1360-1234-0002-000000000001` - READ ONLY
+##### Bump switches - `0000b001-0000-1000-8000-00805f9b34fb` - READ ONLY
 
 Characteristic for reading the six frontal bump switches.
 
 Eight bit encoded value. Bits seven and six are always zero; bit zero is right most bump switch in back to front perspective.
 
-#### Movement - `20240233-1360-1234-0003-000000000000`
+#### Movement - `0000c000-0000-1000-8000-00805f9b34fb`
 
 Service for controlling robot movement. Currently only motor movements but could be expanded for servo movement.
 
-##### Velocity - `20240233-1360-1234-0003-000000000001` - WRITE ONLY
+##### Velocity - `0000c001-0000-1000-8000-00805f9b34fb` - WRITE ONLY
 
 Characteristic for controlling the relative velocity.
 
 Scale is 100 to -100 as an 8 bit value where 100 is 100% forward velocity and -100 is 100% backward velocity.
 
-##### Rotation - `20240233-1360-1234-0003-000000000010` - WRITE ONLY
+##### Rotation - `0000c002-0000-1000-8000-00805f9b34fb` - WRITE ONLY
 
 Characteristic for turning the robot.
 
