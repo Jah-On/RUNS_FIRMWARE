@@ -1,5 +1,7 @@
 # Firmware for the RUNS platform
 
+[GUI client repository](https://github.com/Jah-On/RUNS_CLIENT).
+
 ## Abstract
 
 Remote User Navigated System, or RUNS for short, serves as an educational project teaching the foundations of embedded systems development, IoT platform design, and API integration in user applications. 
